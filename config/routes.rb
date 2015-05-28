@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :users,  only: [:index, :show]
 
   post '/items/:id', to: 'orders#one_click'
+  get '/wishlist', to: 'items#wishlist'
+  post '/wishlist/:id', to: 'items#add_to_wishlist'
 end
