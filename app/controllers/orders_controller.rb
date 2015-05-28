@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def one_click
+    flash[:notice] = "Item has been ordered!"
     redirect_to user_path(1)
   end
 end
