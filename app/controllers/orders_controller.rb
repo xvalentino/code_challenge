@@ -6,4 +6,8 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
+
+  def one_click
+    redirect_to user_path(1)
+  end
 end
