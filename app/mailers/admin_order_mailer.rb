@@ -4,6 +4,6 @@ class AdminOrderMailer < ActionMailer::Base
   def email_admin_about_order(user, order)
     @user = user
     @order = order
-    mail(to: 'email@email.com', subject: 'An order was just placed!')
+    mail(to: 'storedom-overlord@example.com', subject: "An order was just placed by #{@user.name} for Order #{@order.id}")
   end
 end
