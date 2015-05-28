@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "teaspoon"
 gem 'mailcatcher'
 gem 'rails', '4.1.4'
 gem 'sqlite3'
