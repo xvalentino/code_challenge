@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 gem "teaspoon"
+gem "teaspoon-mocha"
+
 gem 'mailcatcher'
+
 gem 'rails', '4.1.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
