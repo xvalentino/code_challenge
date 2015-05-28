@@ -13,6 +13,7 @@ class OrdersController < ApplicationController
     item = Item.find(params[:id])
     order = user.orders.create(amount: 1)
     order.order_items.create(item_id: item.id)
+    AdminOrderMailer.email_admin_about_order(user, order)
     redirect_to order_path(order)
   end
 end
