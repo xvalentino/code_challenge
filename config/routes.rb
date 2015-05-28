@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   post '/items/:id', to: 'orders#one_click'
   get '/wishlist', to: 'items#wishlist'
+  post '/wishlist/:id', to: 'items#add_to_wishlist'
 end

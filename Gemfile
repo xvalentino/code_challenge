@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "responders"
+
 gem "teaspoon"
 gem "teaspoon-mocha"
 
